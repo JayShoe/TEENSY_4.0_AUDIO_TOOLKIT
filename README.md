@@ -1,5 +1,5 @@
 # TEENSY_4.0_AUDIO_TOOLKIT
-Teensy 4.0 Audio Toolkit Shield
+# Teensy 4.0 Audio Toolkit Shield
 Licensed under CC BY-NC-SA 4.0
 https://creativecommons.org/licenses/by-nc-sa/4.0/
 Project by Jay Shoemaker
@@ -13,7 +13,7 @@ The Teensy 4.0 Audio Toolkit Shield is an open source project for learning about
  
  
 
-Teensy Audio Toolkit Shield’s Key Features
+# Teensy Audio Toolkit Shield’s Key Features
  * Open Source CC BY-NC-SA 4.0
  * Stackable Design – To easily integrate with other stackable modules including DAC, ADC, Codec, Bluetooth, etc. 
  * Starting Point for Custom IO Panels – All inputs/outputs are only exposed as header pins. Use of a custom daughterboard, dongle, or soldering directly to the Audio Toolkit Mainboard to expose the desired jacks or ports. 
@@ -25,7 +25,7 @@ Teensy Audio Toolkit Shield’s Key Features
   * Power Supply – 1 Amp regulator for both 5V and 3.3V rails (LM2940) with an input voltage range of 6 V to 26 V. 
  * Footprints, 3d Models, and Schematics included. 
  * Schematic notes and references for SAI1 and SAI2 connectivity to the Teensy. 
-Creating a Custom IO Board
+# Creating a Custom IO Board
 The Audio Toolkit Shield’s header allows simple connections to one or more daughter boards. The mainboard and daughter board’s source and gerbers will be publicly available on the project repository. Pre-assembled boards will be made available (when tested/complete). Create your own daughterboard using the toolkit as a starting point. (Be sure to contribute back your modifications!)
 1.	Delete unneeded parts including the Audio Toolkit Mainboard. 
 2.	Place and route your components. Define your edge cuts. Order your board. 
