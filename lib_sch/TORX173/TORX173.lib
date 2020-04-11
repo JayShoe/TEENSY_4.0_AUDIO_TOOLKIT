@@ -1,0 +1,28 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# TORX173
+#
+DEF TORX173 OC 0 40 Y Y 1 L N
+F0 "OC" -200 500 50 H V L BNN
+F1 "TORX173" -200 -600 50 H V L BNN
+F2 "TOXX173" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 200 400 200 -400 N
+P 2 0 0 10 200 -400 -400 -400 N
+P 2 0 0 10 -400 -400 -400 400 N
+P 2 0 0 10 -400 400 200 400 N
+T 0 -320 70 66 0 0 0 OUT Normal 0 L B
+T 0 -320 270 66 0 0 0 VCC Normal 0 L B
+T 0 -360 -130 66 0 0 0 GND1 Normal 0 L B
+T 0 -360 -330 66 0 0 0 GND2 Normal 0 L B
+X 1 1 400 100 200 L 40 40 0 0 B 
+X 2 2 400 -100 200 L 40 40 0 0 B 
+X 3 3 400 300 200 L 40 40 0 0 B 
+X 4 4 400 -300 200 L 40 40 0 0 B 
+ENDDRAW
+ENDDEF
+#
+# End Library

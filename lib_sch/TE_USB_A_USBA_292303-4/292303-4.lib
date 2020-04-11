@@ -1,0 +1,29 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# 292303-4
+#
+DEF 292303-4 J 0 40 Y Y 1 L N
+F0 "J" -200 330 50 H V L BNN
+F1 "292303-4" -200 -501 50 H V L BNN
+F2 "TE_292303-4" 0 0 50 H I L BNN
+F3 "292303-4" 0 0 50 H I L BNN
+F4 "Compliant" 0 0 50 H I L BNN
+F5 "https://www.te.com/usa-en/product-292303-4.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 -200 300 -200 -400 N
+P 2 0 0 10 -200 -400 200 -400 N
+P 2 0 0 10 200 -400 200 300 N
+P 2 0 0 10 200 300 -200 300 N
+X 1 1 400 200 200 L 40 40 0 0 P 
+X 2 2 400 100 200 L 40 40 0 0 P 
+X 3 3 400 0 200 L 40 40 0 0 P 
+X 4 4 400 -100 200 L 40 40 0 0 P 
+X SHIELD SH1 400 -300 200 L 40 40 0 0 P 
+X SHIELD SH2 400 -300 200 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

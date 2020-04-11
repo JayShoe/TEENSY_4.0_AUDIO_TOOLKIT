@@ -1,0 +1,1331 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLedger 11000 17000 portrait
+encoding utf-8
+Sheet 1 1
+Title "Teensy 4.0 Audio Toolkit"
+Date "2020-04-11"
+Rev "V0.5"
+Comp ""
+Comment1 ""
+Comment2 "Project by Jay Shoemaker"
+Comment3 "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+Comment4 "Open source license by CC BY-NC-SA 4.0"
+$EndDescr
+$Comp
+L 2020-04-10_11-56-10:23LC1024-I_P MEM1
+U 1 1 5E90C041
+P 4713 4160
+F 0 "MEM1" H 6313 4547 60  0000 C CNN
+F 1 "23LC1024-I_P" H 6313 4441 60  0000 C CNN
+F 2 "project_fp:23LC1024-I&slash_ST" H 6313 4400 60  0001 C CNN
+F 3 "" H 4713 4160 60  0000 C CNN
+	1    4713 4160
+	1    0    0    -1  
+$EndComp
+Text GLabel 5463 4260 0    50   Input ~ 0
+PIN12
+Text GLabel 7013 4360 2    50   Input ~ 0
+PIN14
+Text GLabel 7013 4460 2    50   Input ~ 0
+PIN7
+Text GLabel 7013 4160 2    50   Input ~ 0
+3.3V
+Text GLabel 5463 4160 0    50   Input ~ 0
+PIN6
+Text GLabel 5463 4460 0    50   Input ~ 0
+GND
+Text GLabel 7013 4260 2    50   Input ~ 0
+3.3V
+Text GLabel 5463 4360 0    50   Input ~ 0
+3.3V
+Text GLabel 3950 7280 2    39   Input ~ 0
+5V
+Wire Wire Line
+	1955 6405 1905 6405
+Wire Wire Line
+	1905 6405 1905 6355
+Wire Wire Line
+	1955 6505 1905 6505
+Wire Wire Line
+	1905 6505 1905 6555
+Wire Wire Line
+	2455 6405 2505 6405
+Wire Wire Line
+	2505 6405 2505 6355
+Wire Wire Line
+	2455 6505 2505 6505
+Wire Wire Line
+	2505 6505 2505 6555
+$Comp
+L TEENSY_4.0_AUDIO_BREAKOUT-rescue:GND-freeDSP_Classic_SMD-rescue-TEENSY_4_AUDIO_BRIDGE-rescue #PWR0106
+U 1 1 5D0C67B2
+P 1905 6555
+AR Path="/5D0C67B2" Ref="#PWR0106"  Part="1" 
+AR Path="/5CC25A65/5D0C67B2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0106" H 1905 6305 50  0001 C CNN
+F 1 "GND" H 1965 6365 50  0000 C CNN
+F 2 "" H 1905 6555 60  0000 C CNN
+F 3 "" H 1905 6555 60  0000 C CNN
+	1    1905 6555
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even POWER1
+U 1 1 5D0C67B8
+P 2155 6405
+AR Path="/5D0C67B8" Ref="POWER1"  Part="1" 
+AR Path="/5CC25A65/5D0C67B8" Ref="JP?"  Part="1" 
+F 0 "POWER1" H 2205 6755 50  0000 C CNN
+F 1 "Microfit_power" H 2230 6685 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical" H 2155 6405 50  0001 C CNN
+F 3 "~" H 2155 6405 50  0001 C CNN
+	1    2155 6405
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEENSY_4.0_AUDIO_BREAKOUT-rescue:GND-freeDSP_Classic_SMD-rescue-TEENSY_4_AUDIO_BRIDGE-rescue #PWR0107
+U 1 1 5D0C67BF
+P 2505 6555
+AR Path="/5D0C67BF" Ref="#PWR0107"  Part="1" 
+AR Path="/5CC25A65/5D0C67BF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0107" H 2505 6305 50  0001 C CNN
+F 1 "GND" H 2565 6365 50  0000 C CNN
+F 2 "" H 2505 6555 60  0000 C CNN
+F 3 "" H 2505 6555 60  0000 C CNN
+	1    2505 6555
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 7280 3350 7280
+Text Notes 3290 5795 2    79   ~ 16
+POWER SUPPLY
+$Comp
+L Regulator_Linear:NCP1117-12_SOT223 LM2940_5
+U 1 1 5D0C67E0
+P 2720 7280
+AR Path="/5D0C67E0" Ref="LM2940_5"  Part="1" 
+AR Path="/5CC25A65/5D0C67E0" Ref="U?"  Part="1" 
+F 0 "LM2940_5" H 2790 7540 50  0000 C CNN
+F 1 "LM2940IMP-5" H 2790 7440 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" H 2720 7480 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF" H 2820 7030 50  0001 C CNN
+	1    2720 7280
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEENSY_4.0_AUDIO_BREAKOUT-rescue:GND-freeDSP_Classic_SMD-rescue-TEENSY_4_AUDIO_BRIDGE-rescue #PWR0108
+U 1 1 5D0C67E7
+P 2720 7700
+AR Path="/5D0C67E7" Ref="#PWR0108"  Part="1" 
+AR Path="/5CC25A65/5D0C67E7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0108" H 2720 7450 50  0001 C CNN
+F 1 "GND" H 2780 7510 50  0000 C CNN
+F 2 "" H 2720 7700 60  0000 C CNN
+F 3 "" H 2720 7700 60  0000 C CNN
+	1    2720 7700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2720 7580 2720 7700
+$Comp
+L Device:C_Small U4C2
+U 1 1 5D0C67F6
+P 2095 7580
+AR Path="/5D0C67F6" Ref="U4C2"  Part="1" 
+AR Path="/5CC25A65/5D0C67F6" Ref="U4C?"  Part="1" 
+F 0 "U4C2" H 2215 7650 50  0000 L CNN
+F 1 "0.47uF" H 2215 7550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2095 7580 50  0001 C CNN
+F 3 "~" H 2095 7580 50  0001 C CNN
+	1    2095 7580
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small U4C1
+U 1 1 5D0C67FD
+P 3350 7550
+AR Path="/5D0C67FD" Ref="U4C1"  Part="1" 
+AR Path="/5CC25A65/5D0C67FD" Ref="U4C?"  Part="1" 
+F 0 "U4C1" H 3470 7620 50  0000 L CNN
+F 1 "22 uF" H 3470 7520 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3350 7550 50  0001 C CNN
+F 3 "~" H 3350 7550 50  0001 C CNN
+	1    3350 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEENSY_4.0_AUDIO_BREAKOUT-rescue:GND-freeDSP_Classic_SMD-rescue-TEENSY_4_AUDIO_BRIDGE-rescue #PWR0109
+U 1 1 5D0C6812
+P 2095 7680
+AR Path="/5D0C6812" Ref="#PWR0109"  Part="1" 
+AR Path="/5CC25A65/5D0C6812" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0109" H 2095 7430 50  0001 C CNN
+F 1 "GND" H 2155 7490 50  0000 C CNN
+F 2 "" H 2095 7680 60  0000 C CNN
+F 3 "" H 2095 7680 60  0000 C CNN
+	1    2095 7680
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEENSY_4.0_AUDIO_BREAKOUT-rescue:GND-freeDSP_Classic_SMD-rescue-TEENSY_4_AUDIO_BRIDGE-rescue #PWR0110
+U 1 1 5D0C6818
+P 3350 7650
+AR Path="/5D0C6818" Ref="#PWR0110"  Part="1" 
+AR Path="/5CC25A65/5D0C6818" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0110" H 3350 7400 50  0001 C CNN
+F 1 "GND" H 3410 7460 50  0000 C CNN
+F 2 "" H 3350 7650 60  0000 C CNN
+F 3 "" H 3350 7650 60  0000 C CNN
+	1    3350 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2095 7480 2095 7280
+Wire Wire Line
+	1820 7280 2095 7280
+Wire Wire Line
+	2095 7280 2420 7280
+Wire Wire Line
+	3350 7450 3350 7280
+Connection ~ 3350 7280
+Wire Wire Line
+	3350 7280 3020 7280
+Text GLabel 5670 2565 0    50   Input ~ 0
+SD_DAT1
+Text GLabel 5670 2465 0    50   Input ~ 0
+SD_DAT0
+Text GLabel 5670 3065 0    50   Input ~ 0
+SD_CLK
+Text GLabel 5670 2965 0    50   Input ~ 0
+SD_CMD
+Text GLabel 5670 2765 0    50   Input ~ 0
+SD_DAT3
+Text GLabel 5670 2665 0    50   Input ~ 0
+SD_DAT2
+Wire Wire Line
+	8762 6296 8762 6396
+Connection ~ 8762 6396
+$Comp
+L Connector:Barrel_Jack JP1
+U 1 1 5D4E3B52
+P 3185 6365
+F 0 "JP1" H 3185 6575 50  0000 C CNN
+F 1 "Barrel_Jack" H 3185 6165 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 3235 6325 50  0001 C CNN
+F 3 "~" H 3235 6325 50  0001 C CNN
+	1    3185 6365
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEENSY_4.0_AUDIO_BREAKOUT-rescue:GND-freeDSP_Classic_SMD-rescue-TEENSY_4_AUDIO_BRIDGE-rescue #PWR0116
+U 1 1 5D4EA1B5
+P 3700 6465
+AR Path="/5D4EA1B5" Ref="#PWR0116"  Part="1" 
+AR Path="/5CC25A65/5D4EA1B5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0116" H 3700 6215 50  0001 C CNN
+F 1 "GND" H 3760 6275 50  0000 C CNN
+F 2 "" H 3700 6465 60  0000 C CNN
+F 3 "" H 3700 6465 60  0000 C CNN
+	1    3700 6465
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3485 6265 3700 6265
+Wire Wire Line
+	3485 6465 3700 6465
+$Comp
+L teensy:Teensy4.0 U3
+U 1 1 5D6E1937
+P 2765 3442
+F 0 "U3" H 2765 4992 50  0000 C CNN
+F 1 "Teensy4.0" H 2765 1892 50  0000 C CNN
+F 2 "teensy:Teensy40_SMT" H 2365 3642 50  0001 C CNN
+F 3 "" H 2365 3642 50  0001 C CNN
+	1    2765 3442
+	1    0    0    -1  
+$EndComp
+Text GLabel 1665 4792 0    50   Input ~ 0
+BCLK1
+Text GLabel 1845 4997 2    50   Input ~ 0
+LRCLK1
+Text GLabel 4190 4692 2    50   Input ~ 0
+MCLK1
+Text GLabel 1665 2692 0    50   Input ~ 0
+IN2
+Text GLabel 1665 2392 0    50   Input ~ 0
+OUT2
+Text GLabel 1665 2592 0    50   Input ~ 0
+BCLK2
+Text GLabel 1665 2492 0    50   Input ~ 0
+LRCLK2
+Wire Wire Line
+	3865 4692 4190 4692
+Wire Wire Line
+	1665 4692 1575 4692
+Wire Wire Line
+	1575 4692 1575 4997
+Wire Wire Line
+	1575 4997 1845 4997
+Wire Wire Line
+	1665 4092 1595 4092
+Wire Wire Line
+	1665 4192 1595 4192
+Text GLabel 1595 4092 0    50   Input ~ 0
+SPDIF_OUT_TEENSY
+Text GLabel 1595 4192 0    50   Input ~ 0
+SPDIF_IN_TEENSY
+Text GLabel 4190 3692 2    50   Input ~ 0
+MCLK2
+Wire Wire Line
+	3865 3692 4190 3692
+Text GLabel 3865 2992 2    50   Input ~ 0
+SD_DAT1
+Text GLabel 3865 2892 2    50   Input ~ 0
+SD_DAT0
+Text GLabel 3865 2692 2    50   Input ~ 0
+SD_CLK
+Text GLabel 3865 2492 2    50   Input ~ 0
+SD_CMD
+Text GLabel 3865 2392 2    50   Input ~ 0
+SD_DAT3
+Text GLabel 3865 2292 2    50   Input ~ 0
+SD_DAT2
+$Comp
+L TEENSY_4.0_AUDIO_BREAKOUT-rescue:DM3D-SF-Hirose SD1
+U 1 1 5D76D3FA
+P 5870 3165
+F 0 "SD1" H 6200 4185 60  0000 C CNN
+F 1 "DM3D-SF" H 6230 4105 60  0000 C CNN
+F 2 "DM3D-SF:DM3D-SF" H 5870 3190 60  0001 C CNN
+F 3 "" H 5870 3190 60  0000 C CNN
+	1    5870 3165
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEENSY_4.0_AUDIO_BREAKOUT-rescue:TPS2055A-TPS2055A TPS2055A_1
+U 1 1 5D7B55DC
+P 7258 13202
+F 0 "TPS2055A_1" H 7248 13672 50  0000 C CNN
+F 1 "TPS2055A" H 7253 13147 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7258 13202 50  0001 C CNN
+F 3 "" H 7258 13202 50  0001 C CNN
+	1    7258 13202
+	1    0    0    -1  
+$EndComp
+Text GLabel 6753 12952 0    50   Input ~ 0
+5V
+Wire Wire Line
+	6753 12952 6843 12952
+Wire Wire Line
+	6908 13152 6843 13152
+Wire Wire Line
+	6843 13152 6843 12952
+Connection ~ 6843 12952
+Wire Wire Line
+	6843 12952 6908 12952
+$Comp
+L Device:R_Small R38
+U 1 1 5D7ECDEA
+P 7778 13152
+F 0 "R38" V 7723 13047 20  0000 L CNN
+F 1 "44ohm" V 7778 13097 20  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7778 13152 50  0001 C CNN
+F 3 "~" H 7778 13152 50  0001 C CNN
+F 4 "SM0603_Resistor" V 7828 13157 20  0001 C CNN "Package / Case"
+	1    7778 13152
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 5D7F886E
+P 8113 12952
+F 0 "C9" H 8123 13022 20  0000 L CNN
+F 1 "100uf" H 8123 12872 20  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8113 12952 50  0001 C CNN
+F 3 "~" H 8113 12952 50  0001 C CNN
+	1    8113 12952
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEENSY_4.0_AUDIO_BREAKOUT-rescue:USB_Header_5_Pin-USB_Header USB_IO1
+U 1 1 5D815B2D
+P 9343 13302
+F 0 "USB_IO1" H 9343 13852 50  0000 C CNN
+F 1 "USB_Header" H 9343 13252 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 9343 13852 50  0001 C CNN
+F 3 "" H 9343 13852 50  0001 C CNN
+	1    9343 13302
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7608 12852 7678 12852
+Wire Wire Line
+	7608 13052 7678 13052
+Wire Wire Line
+	7678 13052 7678 12952
+Connection ~ 7678 12852
+Wire Wire Line
+	7678 12852 8113 12852
+Wire Wire Line
+	7608 12952 7678 12952
+Connection ~ 7678 12952
+Wire Wire Line
+	7678 12952 7678 12852
+Text GLabel 3865 4392 2    50   Input ~ 0
+5V
+Text GLabel 7883 13342 0    50   Input ~ 0
+3V3_TEENSY
+Wire Wire Line
+	7608 13152 7678 13152
+Wire Wire Line
+	7878 13152 7928 13152
+Wire Wire Line
+	7928 13152 7928 13342
+Wire Wire Line
+	7928 13342 7883 13342
+Wire Wire Line
+	8113 12852 8598 12852
+Connection ~ 8113 12852
+Wire Wire Line
+	9093 13152 8968 13152
+Wire Wire Line
+	8968 13152 8968 13467
+Wire Wire Line
+	8968 13467 8978 13467
+Text GLabel 3865 2092 2    50   Input ~ 0
+USB_D+
+Text GLabel 3865 2192 2    50   Input ~ 0
+USB_D-
+Text GLabel 9093 13052 0    50   Input ~ 0
+USB_D+
+Text GLabel 9093 12952 0    50   Input ~ 0
+USB_D-
+Connection ~ 2095 7280
+Text GLabel 3865 2592 2    50   Input ~ 0
+SD_3v3
+Text GLabel 3865 2792 2    50   Input ~ 0
+SD_GND
+Text GLabel 6770 2665 2    50   Input ~ 0
+GND
+Text GLabel 6770 2465 2    50   Input ~ 0
+3.3V
+$Comp
+L Connector:USB_A J14
+U 1 1 5D658EA3
+P 8213 13897
+F 0 "J14" H 8013 14347 50  0000 L CNN
+F 1 "USB_A" H 8013 14247 50  0000 L CNN
+F 2 "TE_USB_A_USBA_292303-4:TE_292303-4" H 8363 13847 50  0001 C CNN
+F 3 " ~" H 8363 13847 50  0001 C CNN
+	1    8213 13897
+	1    0    0    -1  
+$EndComp
+Text GLabel 8513 13897 2    50   Input ~ 0
+USB_D+
+Text GLabel 8513 13997 2    50   Input ~ 0
+USB_D-
+Wire Wire Line
+	8513 13697 8598 13697
+Wire Wire Line
+	8598 13697 8598 12852
+Connection ~ 8598 12852
+Wire Wire Line
+	8598 12852 9093 12852
+Wire Wire Line
+	8978 13467 8978 14407
+Wire Wire Line
+	8213 14407 8213 14297
+$Comp
+L Device:R_Small R24
+U 1 1 5D8B017C
+P 7488 6491
+F 0 "R24" V 7433 6386 20  0000 L CNN
+F 1 "22" V 7488 6466 20  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7488 6491 50  0001 C CNN
+F 3 "~" H 7488 6491 50  0001 C CNN
+F 4 "SM0603_Resistor" V 7538 6496 20  0001 C CNN "Package / Case"
+	1    7488 6491
+	1    0    0    -1  
+$EndComp
+Text GLabel 1665 2892 0    50   Input ~ 0
+OUT1A
+Text GLabel 3865 3192 2    50   Input ~ 0
+OUT1B
+Text GLabel 1665 3092 0    50   Input ~ 0
+OUT1C
+Text GLabel 1665 2792 0    50   Input ~ 0
+OUT1D
+Wire Wire Line
+	8213 14407 8978 14407
+$Comp
+L power:GND #PWR0101
+U 1 1 5E99E3E5
+P 8113 13052
+F 0 "#PWR0101" H 8113 12802 50  0001 C CNN
+F 1 "GND" H 8118 12879 50  0000 C CNN
+F 2 "" H 8113 13052 50  0001 C CNN
+F 3 "" H 8113 13052 50  0001 C CNN
+	1    8113 13052
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5E9A514D
+P 8760 6590
+F 0 "#PWR0102" H 8760 6340 50  0001 C CNN
+F 1 "GND" H 8765 6417 50  0000 C CNN
+F 2 "" H 8760 6590 50  0001 C CNN
+F 3 "" H 8760 6590 50  0001 C CNN
+	1    8760 6590
+	1    0    0    -1  
+$EndComp
+$Comp
+L EAPLRAA4:EAPLRAA4 TOS_IN0
+U 1 1 5E9BEA62
+P 8916 7634
+F 0 "TOS_IN0" H 9302 7680 50  0000 L CNN
+F 1 "EAPLRAA4" H 9302 7589 50  0000 L CNN
+F 2 "PLR135-T10_PLT133-T10W" H 8866 8084 50  0001 L BNN
+F 3 "" H 8916 7634 50  0001 C CNN
+	1    8916 7634
+	1    0    0    -1  
+$EndComp
+Text GLabel 1905 6355 0    50   Input ~ 0
+12V
+Text GLabel 2505 6355 2    50   Input ~ 0
+12V
+Text GLabel 3700 6265 2    50   Input ~ 0
+VIN
+Text GLabel 1820 7280 0    50   Input ~ 0
+12V
+$Comp
+L PLT133-T10W:PLT133-T10W TOS_O0
+U 1 1 5E9DC938
+P 7121 7669
+F 0 "TOS_O0" H 7499 7715 50  0000 L CNN
+F 1 "PLT133-T10W" H 7499 7624 50  0000 L CNN
+F 2 "PLT133-T10W:PLR135-T10_PLT133-T10W" H 7121 7669 50  0001 L BNN
+F 3 "" H 7121 7669 50  0001 C CNN
+	1    7121 7669
+	1    0    0    -1  
+$EndComp
+Text GLabel 6828 6741 0    50   Input ~ 0
+SPDIF_IN
+$Comp
+L Device:R_Small R1
+U 1 1 5E9EFA1D
+P 7238 6741
+F 0 "R1" V 7183 6636 20  0000 L CNN
+F 1 "22" V 7238 6716 20  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7238 6741 50  0001 C CNN
+F 3 "~" H 7238 6741 50  0001 C CNN
+F 4 "SM0603_Resistor" V 7288 6746 20  0001 C CNN "Package / Case"
+	1    7238 6741
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5E9EFA24
+P 7488 6936
+F 0 "R2" V 7433 6831 20  0000 L CNN
+F 1 "22" V 7488 6911 20  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7488 6936 50  0001 C CNN
+F 3 "~" H 7488 6936 50  0001 C CNN
+F 4 "SM0603_Resistor" V 7538 6941 20  0001 C CNN "Package / Case"
+	1    7488 6936
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7028 6741 7138 6741
+Wire Wire Line
+	7338 6741 7488 6741
+Wire Wire Line
+	7488 6741 7488 6836
+Connection ~ 7488 6741
+Wire Wire Line
+	7488 6741 7668 6741
+$Comp
+L Device:C_Small C1
+U 1 1 5E9EFA30
+P 6928 6741
+F 0 "C1" H 6938 6811 20  0000 L CNN
+F 1 "1μ" H 6938 6661 20  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6928 6741 50  0001 C CNN
+F 3 "~" H 6928 6741 50  0001 C CNN
+	1    6928 6741
+	0    -1   -1   0   
+$EndComp
+Text GLabel 6721 7369 0    50   Input ~ 0
+SPDIF_OUT
+Text GLabel 8516 7334 0    50   Input ~ 0
+SPDIF_IN
+Text GLabel 3865 4592 2    50   Input ~ 0
+3.3V
+Text GLabel 6721 7669 0    50   Input ~ 0
+3.3V
+Text GLabel 8516 7634 0    50   Input ~ 0
+3.3V
+Text GLabel 8516 7934 0    50   Input ~ 0
+GND
+Text GLabel 6721 7969 0    50   Input ~ 0
+GND
+Text Notes 7555 5674 0    79   ~ 16
+S/PDIF + TOSLINK
+Text Notes 7882 12273 0    79   ~ 16
+USB HOST
+Text Notes 5615 1795 0    79   ~ 16
+SD CARD READER
+Text Notes 5891 3617 0    79   ~ 16
+FLASH / RAM
+Text Notes 6628 12537 0    39   ~ 8
+https://forum.pjrc.com/threads/58419-Teensy-4-0-USB-host-current-limit-chip
+Text GLabel 3975 8565 2    39   Input ~ 0
+3.3V
+Wire Wire Line
+	3975 8565 3375 8565
+$Comp
+L Regulator_Linear:NCP1117-12_SOT223 LM2940_3
+U 1 1 5E9399C6
+P 2745 8565
+AR Path="/5E9399C6" Ref="LM2940_3"  Part="1" 
+AR Path="/5CC25A65/5E9399C6" Ref="U?"  Part="1" 
+F 0 "LM2940_3" H 2815 8825 50  0000 C CNN
+F 1 "LM2940IMP-33" H 2815 8725 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" H 2745 8765 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF" H 2845 8315 50  0001 C CNN
+	1    2745 8565
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEENSY_4.0_AUDIO_BREAKOUT-rescue:GND-freeDSP_Classic_SMD-rescue-TEENSY_4_AUDIO_BRIDGE-rescue #PWR0103
+U 1 1 5E9399CC
+P 2745 8985
+AR Path="/5E9399CC" Ref="#PWR0103"  Part="1" 
+AR Path="/5CC25A65/5E9399CC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0103" H 2745 8735 50  0001 C CNN
+F 1 "GND" H 2805 8795 50  0000 C CNN
+F 2 "" H 2745 8985 60  0000 C CNN
+F 3 "" H 2745 8985 60  0000 C CNN
+	1    2745 8985
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2745 8865 2745 8985
+$Comp
+L Device:C_Small U4C3
+U 1 1 5E9399D3
+P 2120 8865
+AR Path="/5E9399D3" Ref="U4C3"  Part="1" 
+AR Path="/5CC25A65/5E9399D3" Ref="U4C?"  Part="1" 
+F 0 "U4C3" H 2240 8935 50  0000 L CNN
+F 1 "0.47uF" H 2240 8835 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2120 8865 50  0001 C CNN
+F 3 "~" H 2120 8865 50  0001 C CNN
+	1    2120 8865
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small U4C4
+U 1 1 5E9399D9
+P 3375 8835
+AR Path="/5E9399D9" Ref="U4C4"  Part="1" 
+AR Path="/5CC25A65/5E9399D9" Ref="U4C?"  Part="1" 
+F 0 "U4C4" H 3495 8905 50  0000 L CNN
+F 1 "22 uF" H 3495 8805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3375 8835 50  0001 C CNN
+F 3 "~" H 3375 8835 50  0001 C CNN
+	1    3375 8835
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEENSY_4.0_AUDIO_BREAKOUT-rescue:GND-freeDSP_Classic_SMD-rescue-TEENSY_4_AUDIO_BRIDGE-rescue #PWR0104
+U 1 1 5E9399DF
+P 2120 8965
+AR Path="/5E9399DF" Ref="#PWR0104"  Part="1" 
+AR Path="/5CC25A65/5E9399DF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0104" H 2120 8715 50  0001 C CNN
+F 1 "GND" H 2180 8775 50  0000 C CNN
+F 2 "" H 2120 8965 60  0000 C CNN
+F 3 "" H 2120 8965 60  0000 C CNN
+	1    2120 8965
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEENSY_4.0_AUDIO_BREAKOUT-rescue:GND-freeDSP_Classic_SMD-rescue-TEENSY_4_AUDIO_BRIDGE-rescue #PWR0105
+U 1 1 5E9399E5
+P 3375 8935
+AR Path="/5E9399E5" Ref="#PWR0105"  Part="1" 
+AR Path="/5CC25A65/5E9399E5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0105" H 3375 8685 50  0001 C CNN
+F 1 "GND" H 3435 8745 50  0000 C CNN
+F 2 "" H 3375 8935 60  0000 C CNN
+F 3 "" H 3375 8935 60  0000 C CNN
+	1    3375 8935
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2120 8765 2120 8565
+Wire Wire Line
+	1845 8565 2120 8565
+Wire Wire Line
+	2120 8565 2445 8565
+Wire Wire Line
+	3375 8735 3375 8565
+Connection ~ 3375 8565
+Wire Wire Line
+	3375 8565 3045 8565
+Connection ~ 2120 8565
+Text GLabel 1845 8565 0    50   Input ~ 0
+VIN
+$Comp
+L Device:C_Small C2
+U 1 1 5D89A517
+P 6928 6296
+F 0 "C2" H 6938 6366 20  0000 L CNN
+F 1 "1μ" H 6938 6216 20  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6928 6296 50  0001 C CNN
+F 3 "~" H 6928 6296 50  0001 C CNN
+	1    6928 6296
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7488 6296
+Wire Wire Line
+	7488 6296 7488 6391
+Wire Wire Line
+	7338 6296 7488 6296
+Wire Wire Line
+	7028 6296 7138 6296
+Wire Wire Line
+	6758 6296 6828 6296
+$Comp
+L Device:R_Small R23
+U 1 1 5D8B0174
+P 7238 6296
+F 0 "R23" V 7183 6191 20  0000 L CNN
+F 1 "22" V 7238 6271 20  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7238 6296 50  0001 C CNN
+F 3 "~" H 7238 6296 50  0001 C CNN
+F 4 "SM0603_Resistor" V 7288 6301 20  0001 C CNN "Package / Case"
+	1    7238 6296
+	0    1    1    0   
+$EndComp
+Text GLabel 6758 6296 0    50   Input ~ 0
+SPDIF_OUT
+Wire Wire Line
+	8762 6396 8761 6496
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even SPDIF_IO1
+U 1 1 5E93B588
+P 8353 6396
+F 0 "SPDIF_IO1" H 8403 6713 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 8403 6622 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 8353 6396 50  0001 C CNN
+F 3 "~" H 8353 6396 50  0001 C CNN
+	1    8353 6396
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7668 6741 7669 6396
+Wire Wire Line
+	7488 6296 8153 6296
+Wire Wire Line
+	7669 6396 8153 6396
+Wire Wire Line
+	8653 6296 8762 6296
+Wire Wire Line
+	8653 6396 8762 6396
+Text GLabel 8153 6496 0    50   Input ~ 0
+3.3V
+Wire Wire Line
+	8653 6496 8760 6496
+$Comp
+L TEENSY_4.0_AUDIO_BREAKOUT-rescue:GND-freeDSP_Classic_SMD-rescue-TEENSY_4_AUDIO_BRIDGE-rescue #PWR0111
+U 1 1 5E91A8F8
+P 9266 3607
+AR Path="/5E91A8F8" Ref="#PWR0111"  Part="1" 
+AR Path="/5CC25A65/5E91A8F8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0111" H 9266 3357 50  0001 C CNN
+F 1 "GND" H 9326 3417 50  0000 C CNN
+F 2 "" H 9266 3607 60  0000 C CNN
+F 3 "" H 9266 3607 60  0000 C CNN
+	1    9266 3607
+	1    0    0    -1  
+$EndComp
+Text GLabel 8765 2625 0    50   Input ~ 0
+12V
+Text GLabel 8765 2725 0    50   Input ~ 0
+12V
+Text GLabel 8765 3025 0    50   Input ~ 0
+USB_D+
+Text GLabel 8765 2925 0    50   Input ~ 0
+USB_D-
+Text GLabel 8765 2825 0    50   Input ~ 0
+5V
+Text GLabel 8765 3425 0    50   Input ~ 0
+SPDIF_IN
+Text GLabel 8765 3325 0    50   Input ~ 0
+SPDIF_OUT
+Text GLabel 8765 3525 0    50   Input ~ 0
+3.3V
+Text GLabel 8765 3125 0    50   Input ~ 0
+GND
+Text GLabel 8765 3625 0    50   Input ~ 0
+MIDI_IN_4
+Text GLabel 8765 3725 0    50   Input ~ 0
+MIDI_IN_5
+Text GLabel 8765 3825 0    50   Input ~ 0
+MIDI_OUT_4
+Text GLabel 8765 3925 0    50   Input ~ 0
+MIDI_OUT_5
+Text GLabel 8765 4025 0    50   Input ~ 0
+MIDI_THRU_4
+Text GLabel 8765 4125 0    50   Input ~ 0
+MIDI_THRU_5
+Text GLabel 1665 2192 0    50   Input ~ 0
+MIDI_RX
+Text GLabel 1665 2292 0    50   Input ~ 0
+MIDI_TX
+Text GLabel 3865 4492 2    50   Input ~ 0
+GND
+$Comp
+L Connector_Generic:Conn_02x16_Odd_Even IO_1
+U 1 1 5EF169C7
+P 8965 3325
+F 0 "IO_1" H 9015 4242 50  0000 C CNN
+F 1 "IO_1" H 9015 4151 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x15_P2.54mm_Vertical" H 8965 3325 50  0001 C CNN
+F 3 "~" H 8965 3325 50  0001 C CNN
+	1    8965 3325
+	1    0    0    -1  
+$EndComp
+Text GLabel 1665 2092 0    50   Input ~ 0
+GND
+$Comp
+L SPDIF_PJRAN1X1U04X:PJRAN1X1U04X SPDIF_IN1
+U 1 1 5EFAEF94
+P 8787 8945
+F 0 "SPDIF_IN1" H 8844 9337 50  0000 C CNN
+F 1 "PJRAN1X1U04X" H 8844 9246 50  0000 C CNN
+F 2 "project_fp:SPDIF_PJRAN1X1U01X" H 8787 8945 50  0001 L BNN
+F 3 "http://datasheets.diptrace.com/con_rca_jack/pjran1x1u__x_series_cd.pdf" H 8787 8945 50  0001 L BNN
+F 4 "Switchcraft" H 8787 8945 50  0001 L BNN "Field4"
+	1    8787 8945
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPDIF_PJRAN1X1U04X:PJRAN1X1U04X SPDIF_OUT0
+U 1 1 5EFBEE37
+P 6997 8888
+F 0 "SPDIF_OUT0" H 7054 9280 50  0000 C CNN
+F 1 "PJRAN1X1U04X" H 7054 9189 50  0000 C CNN
+F 2 "project_fp:SPDIF_PJRAN1X1U01X" H 6997 8888 50  0001 L BNN
+F 3 "http://datasheets.diptrace.com/con_rca_jack/pjran1x1u__x_series_cd.pdf" H 6997 8888 50  0001 L BNN
+F 4 "Switchcraft" H 6997 8888 50  0001 L BNN "Field4"
+	1    6997 8888
+	1    0    0    -1  
+$EndComp
+Text Notes 1900 13828 2    79   ~ 16
+MIDI THROUGH
+Connection ~ 1533 14432
+Wire Wire Line
+	1401 14432 1533 14432
+Wire Wire Line
+	1533 14432 1665 14432
+Wire Wire Line
+	3434 14425 3486 14425
+Connection ~ 3434 14425
+Wire Wire Line
+	1533 14923 1533 14432
+Wire Wire Line
+	2396 14923 1533 14923
+Wire Wire Line
+	3434 14921 2596 14923
+Wire Wire Line
+	3434 14425 3434 14921
+$Comp
+L Device:R_Small TX_0
+U 1 1 5ED259BE
+P 2496 14923
+F 0 "TX_0" V 2441 14818 20  0000 L CNN
+F 1 "0.0" V 2496 14868 20  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2496 14923 50  0001 C CNN
+F 3 "~" H 2496 14923 50  0001 C CNN
+F 4 "SM0603_Resistor" V 2546 14928 20  0001 C CNN "Package / Case"
+F 5 "Jump with 0 Ohm when no 74LS00." V 2581 14922 50  0000 C CNN "Note"
+	1    2496 14923
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3390 14425 3434 14425
+Wire Wire Line
+	3521 10831 3616 10831
+Connection ~ 3521 10831
+Wire Wire Line
+	3521 10776 3521 10831
+Wire Wire Line
+	3521 10431 3616 10431
+Connection ~ 3521 10431
+Wire Wire Line
+	3521 10431 3521 10476
+Wire Wire Line
+	3442 10831 3521 10831
+Wire Wire Line
+	3442 10431 3521 10431
+Connection ~ 1654 10431
+Wire Wire Line
+	1654 10431 1482 10431
+Text GLabel 1482 10431 0    50   Input ~ 0
+MIDI_RX
+Wire Wire Line
+	1667 14530 1883 14530
+Wire Wire Line
+	1667 14330 1883 14330
+Wire Wire Line
+	1667 14530 1667 14330
+Wire Wire Line
+	2682 14430 2682 14325
+Connection ~ 2682 14430
+Wire Wire Line
+	2483 14430 2682 14430
+Wire Wire Line
+	2682 14325 2790 14325
+Wire Wire Line
+	2682 14525 2682 14430
+Wire Wire Line
+	2682 14525 2790 14525
+$Comp
+L Device:R_Small R8
+U 1 1 5EB5E0DE
+P 3586 14425
+F 0 "R8" V 3531 14320 20  0000 L CNN
+F 1 "47" V 3586 14370 20  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3586 14425 50  0001 C CNN
+F 3 "~" H 3586 14425 50  0001 C CNN
+F 4 "SM0603_Resistor" V 3636 14430 20  0001 C CNN "Package / Case"
+	1    3586 14425
+	0    1    1    0   
+$EndComp
+Text GLabel 3834 14893 0    50   Input ~ 0
+5V
+$Comp
+L Device:R_Small R6
+U 1 1 5EB35DAC
+P 3934 14893
+F 0 "R6" V 3879 14788 20  0000 L CNN
+F 1 "47" V 3934 14838 20  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3934 14893 50  0001 C CNN
+F 3 "~" H 3934 14893 50  0001 C CNN
+F 4 "SM0603_Resistor" V 3984 14898 20  0001 C CNN "Package / Case"
+	1    3934 14893
+	0    1    1    0   
+$EndComp
+Text GLabel 3686 14425 2    50   Input ~ 0
+MIDI_THRU_5
+Text GLabel 4034 14893 2    50   Input ~ 0
+MIDI_THRU_4
+Text GLabel 5410 14647 2    50   Input ~ 0
+MIDI_THRU_5
+Text GLabel 4810 14447 0    50   Input ~ 0
+GND
+Text GLabel 5410 14447 2    50   Input ~ 0
+MIDI_THRU_4
+Text GLabel 5386 12952 2    50   Input ~ 0
+MIDI_OUT_5
+Text GLabel 4786 12752 0    50   Input ~ 0
+GND
+Text GLabel 5386 12752 2    50   Input ~ 0
+MIDI_OUT_4
+Text GLabel 5225 10547 2    50   Input ~ 0
+MIDI_IN_4
+Text GLabel 4625 10547 0    50   Input ~ 0
+MIDI_IN_5
+Text GLabel 3616 10431 2    50   Input ~ 0
+MIDI_IN_4
+Text GLabel 3616 10831 2    50   Input ~ 0
+MIDI_IN_5
+Wire Wire Line
+	2242 10131 2160 10131
+Text GLabel 2160 10131 0    50   Input ~ 0
+GND
+Wire Wire Line
+	1992 10831 1910 10831
+Wire Wire Line
+	2242 10831 2192 10831
+Connection ~ 1654 11131
+Wire Wire Line
+	1654 11318 1423 11318
+Wire Wire Line
+	1654 11131 1654 11318
+Wire Wire Line
+	1654 11131 1654 10431
+Wire Wire Line
+	2242 10431 1654 10431
+Wire Wire Line
+	2242 11131 1654 11131
+Text GLabel 1401 14432 0    50   Input ~ 0
+MIDI_TX
+Text GLabel 1910 10831 0    50   Input ~ 0
+GND
+Text GLabel 1423 11318 0    50   Input ~ 0
+5V
+$Comp
+L 74xx:74LS00 74LS0
+U 4 1 5E9B4C9B
+P 2183 14430
+F 0 "74LS0" H 2183 14755 50  0000 C CNN
+F 1 "74LS00" H 2183 14664 50  0000 C CNN
+F 2 "project_fp:74LS00_SOIC127P600X175-14N" H 2183 14430 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 2183 14430 50  0001 C CNN
+	4    2183 14430
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS00 74LS0
+U 3 1 5E9B37A7
+P 3090 14425
+F 0 "74LS0" H 3090 14750 50  0000 C CNN
+F 1 "74LS00" H 3090 14659 50  0000 C CNN
+F 2 "project_fp:74LS00_SOIC127P600X175-14N" H 3090 14425 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 3090 14425 50  0001 C CNN
+	3    3090 14425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 5E99FEF2
+P 2092 10831
+F 0 "R5" V 2037 10726 20  0000 L CNN
+F 1 "1K5" V 2092 10776 20  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2092 10831 50  0001 C CNN
+F 3 "~" H 2092 10831 50  0001 C CNN
+F 4 "SM0603_Resistor" V 2142 10836 20  0001 C CNN "Package / Case"
+	1    2092 10831
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D1
+U 1 1 5E998227
+P 3521 10626
+F 0 "D1" H 3521 10842 50  0000 C CNN
+F 1 "1N4148" H 3521 10751 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 3521 10451 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3521 10626 50  0001 C CNN
+	1    3521 10626
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:DIN-5 MIDI_OUT_1
+U 1 1 5E97AB9F
+P 5086 12852
+F 0 "MIDI_OUT_1" H 5086 12577 50  0000 C CNN
+F 1 "DIN-5" H 5086 12486 50  0000 C CNN
+F 2 "project_fp:SDS-50J_MIDI_JACK" H 5086 12852 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 5086 12852 50  0001 C CNN
+	1    5086 12852
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:DIN-5 MIDI_THROUGH_1
+U 1 1 5E97930E
+P 5110 14547
+F 0 "MIDI_THROUGH_1" H 5110 14272 50  0000 C CNN
+F 1 "DIN-5" H 5110 14181 50  0000 C CNN
+F 2 "project_fp:SDS-50J_MIDI_JACK" H 5110 14547 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 5110 14547 50  0001 C CNN
+	1    5110 14547
+	1    0    0    -1  
+$EndComp
+Text Notes 1681 9835 2    79   ~ 16
+MIDI IN
+$Comp
+L 6N137:6N137 6N137_1
+U 1 1 5E944D9D
+P 2842 10631
+F 0 "6N137_1" H 2842 9864 50  0000 C CNN
+F 1 "6N137" H 2842 9955 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_SMDSocket_SmallPads" H 2842 10631 50  0001 L BNN
+F 3 "Vishay" H 2842 10631 50  0001 L BNN
+	1    2842 10631
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:DIN-5 MIDI_IN_1
+U 1 1 5E941F2B
+P 4925 10647
+F 0 "MIDI_IN_1" H 4925 10372 50  0000 C CNN
+F 1 "DIN-5" H 4925 10281 50  0000 C CNN
+F 2 "project_fp:SDS-50J_MIDI_JACK" H 4925 10647 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 4925 10647 50  0001 C CNN
+	1    4925 10647
+	1    0    0    -1  
+$EndComp
+Text Notes 1571 12068 2    79   ~ 16
+MIDI OUT
+Connection ~ 1523 12684
+Wire Wire Line
+	1523 12684 1434 12684
+Wire Wire Line
+	1655 12684 1655 12579
+Connection ~ 1655 12684
+Wire Wire Line
+	1523 12684 1655 12684
+Wire Wire Line
+	1523 13175 1523 12684
+Wire Wire Line
+	2386 13175 1523 13175
+Wire Wire Line
+	3424 12679 3475 12679
+Connection ~ 3424 12679
+Wire Wire Line
+	3424 13175 2586 13175
+Wire Wire Line
+	3424 12679 3424 13175
+Wire Wire Line
+	3379 12679 3424 12679
+$Comp
+L Device:R_Small RX_0
+U 1 1 5ECDDFA9
+P 2486 13175
+F 0 "RX_0" V 2431 13070 20  0000 L CNN
+F 1 "0.0" V 2486 13120 20  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2486 13175 50  0001 C CNN
+F 3 "~" H 2486 13175 50  0001 C CNN
+F 4 "SM0603_Resistor" V 2536 13180 20  0001 C CNN "Package / Case"
+F 5 "Jump with 0 Ohm when no 74LS00." V 2603 13188 50  0000 C CNN "Note"
+	1    2486 13175
+	0    1    1    0   
+$EndComp
+Text GLabel 1434 12684 0    50   Input ~ 0
+MIDI_RX
+Wire Wire Line
+	1655 12779 1871 12779
+Wire Wire Line
+	1655 12579 1871 12579
+Text GLabel 1988 15578 0    50   Input ~ 0
+5V
+Wire Wire Line
+	1655 12779 1655 12684
+Wire Wire Line
+	2671 12678 2671 12579
+Connection ~ 2671 12678
+Wire Wire Line
+	2670 12678 2671 12678
+Wire Wire Line
+	2670 12679 2670 12678
+Wire Wire Line
+	2471 12679 2670 12679
+Wire Wire Line
+	2671 12579 2779 12579
+Wire Wire Line
+	2671 12779 2671 12678
+Wire Wire Line
+	2671 12779 2779 12779
+Text GLabel 3915 13253 0    50   Input ~ 0
+5V
+Text GLabel 3675 12679 2    50   Input ~ 0
+MIDI_OUT_5
+Text GLabel 4115 13253 2    50   Input ~ 0
+MIDI_OUT_4
+$Comp
+L 74xx:74LS00 74LS0
+U 2 1 5E9B0FAF
+P 3079 12679
+F 0 "74LS0" H 3079 13004 50  0000 C CNN
+F 1 "74LS00" H 3079 12913 50  0000 C CNN
+F 2 "project_fp:74LS00_SOIC127P600X175-14N" H 3079 12679 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 3079 12679 50  0001 C CNN
+	2    3079 12679
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS00 74LS0
+U 1 1 5E9AE741
+P 2171 12679
+F 0 "74LS0" H 2171 13004 50  0000 C CNN
+F 1 "74LS00" H 2171 12913 50  0000 C CNN
+F 2 "project_fp:74LS00_SOIC127P600X175-14N" H 2171 12679 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 2171 12679 50  0001 C CNN
+	1    2171 12679
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R7
+U 1 1 5E983ED3
+P 4015 13253
+F 0 "R7" V 3960 13148 20  0000 L CNN
+F 1 "47" V 4015 13198 20  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4015 13253 50  0001 C CNN
+F 3 "~" H 4015 13253 50  0001 C CNN
+F 4 "SM0603_Resistor" V 4065 13258 20  0001 C CNN "Package / Case"
+	1    4015 13253
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 5E982A68
+P 3575 12679
+F 0 "R9" V 3520 12574 20  0000 L CNN
+F 1 "47" V 3575 12624 20  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3575 12679 50  0001 C CNN
+F 3 "~" H 3575 12679 50  0001 C CNN
+F 4 "SM0603_Resistor" V 3625 12684 20  0001 C CNN "Package / Case"
+	1    3575 12679
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS00 74LS0
+U 5 1 5E9B6CCF
+P 2488 15578
+F 0 "74LS0" V 2855 15578 50  0000 C CNN
+F 1 "74LS00" V 2764 15578 50  0000 C CNN
+F 2 "project_fp:74LS00_SOIC127P600X175-14N" H 2488 15578 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 2488 15578 50  0001 C CNN
+	5    2488 15578
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2990 15581 2    50   Input ~ 0
+GND
+Text Notes 8660 2141 0    79   ~ 16
+IO HEADER
+Text GLabel 4882 15594 0    50   Input ~ 0
+MIDI_IN_4
+Text GLabel 4882 15694 0    50   Input ~ 0
+MIDI_IN_5
+Text GLabel 4882 15794 0    50   Input ~ 0
+MIDI_OUT_4
+Text GLabel 4882 15894 0    50   Input ~ 0
+MIDI_OUT_5
+Text GLabel 4882 15994 0    50   Input ~ 0
+MIDI_THRU_4
+Text GLabel 4882 16094 0    50   Input ~ 0
+MIDI_THRU_5
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J1
+U 1 1 5F17E4C1
+P 5082 15794
+F 0 "J1" H 5132 16211 50  0000 C CNN
+F 1 "MIDI_IO1" H 5132 16120 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 5082 15794 50  0001 C CNN
+F 3 "~" H 5082 15794 50  0001 C CNN
+	1    5082 15794
+	1    0    0    -1  
+$EndComp
+$Comp
+L 35RAPC4BHN2:35RAPC4BHN2 MIDI_IN_2
+U 1 1 5F19BD84
+P 6834 10786
+F 0 "MIDI_IN_2" H 6866 11167 50  0000 C CNN
+F 1 "35RAPC4BHN2" H 6866 11076 50  0000 C CNN
+F 2 "project_fp:3.5MM_SWITCHCRAFT_35RAPC4BHN2" H 6834 10786 50  0001 L BNN
+F 3 "Switchcraft" H 6834 10786 50  0001 L BNN
+F 4 "Manufacturer Recommendation" H 6834 10786 50  0001 L BNN "Field4"
+F 5 "Conn 3.5MM Stereo Jack F 5 POS Solder RA Thru-Hole 5 Terminal 1 Port" H 6834 10786 50  0001 L BNN "Field5"
+F 6 "None" H 6834 10786 50  0001 L BNN "Field6"
+F 7 "35RAPC4BHN2" H 6834 10786 50  0001 L BNN "Field7"
+F 8 "1.01 USD" H 6834 10786 50  0001 L BNN "Field8"
+F 9 "Good" H 6834 10786 50  0001 L BNN "Field9"
+	1    6834 10786
+	1    0    0    -1  
+$EndComp
+$Comp
+L 35RAPC4BHN2:35RAPC4BHN2 MIDI_THROUGH_2
+U 1 1 5F19DDB2
+P 8178 10805
+F 0 "MIDI_THROUGH_2" H 8210 11186 50  0000 C CNN
+F 1 "35RAPC4BHN2" H 8210 11095 50  0000 C CNN
+F 2 "project_fp:3.5MM_SWITCHCRAFT_35RAPC4BHN2" H 8178 10805 50  0001 L BNN
+F 3 "Switchcraft" H 8178 10805 50  0001 L BNN
+F 4 "Manufacturer Recommendation" H 8178 10805 50  0001 L BNN "Field4"
+F 5 "Conn 3.5MM Stereo Jack F 5 POS Solder RA Thru-Hole 5 Terminal 1 Port" H 8178 10805 50  0001 L BNN "Field5"
+F 6 "None" H 8178 10805 50  0001 L BNN "Field6"
+F 7 "35RAPC4BHN2" H 8178 10805 50  0001 L BNN "Field7"
+F 8 "1.01 USD" H 8178 10805 50  0001 L BNN "Field8"
+F 9 "Good" H 8178 10805 50  0001 L BNN "Field9"
+	1    8178 10805
+	1    0    0    -1  
+$EndComp
+$Comp
+L 35RAPC4BHN2:35RAPC4BHN2 MIDI_OUT_2
+U 1 1 5F19E8BE
+P 9413 10786
+F 0 "MIDI_OUT_2" H 9445 11167 50  0000 C CNN
+F 1 "35RAPC4BHN2" H 9445 11076 50  0000 C CNN
+F 2 "project_fp:3.5MM_SWITCHCRAFT_35RAPC4BHN2" H 9413 10786 50  0001 L BNN
+F 3 "Switchcraft" H 9413 10786 50  0001 L BNN
+F 4 "Manufacturer Recommendation" H 9413 10786 50  0001 L BNN "Field4"
+F 5 "Conn 3.5MM Stereo Jack F 5 POS Solder RA Thru-Hole 5 Terminal 1 Port" H 9413 10786 50  0001 L BNN "Field5"
+F 6 "None" H 9413 10786 50  0001 L BNN "Field6"
+F 7 "35RAPC4BHN2" H 9413 10786 50  0001 L BNN "Field7"
+F 8 "1.01 USD" H 9413 10786 50  0001 L BNN "Field8"
+F 9 "Good" H 9413 10786 50  0001 L BNN "Field9"
+	1    9413 10786
+	1    0    0    -1  
+$EndComp
+Text Notes 8478 9967 2    79   ~ 16
+3 PIN MIDI
+Wire Wire Line
+	8760 6496 8760 6590
+Connection ~ 8760 6496
+Wire Wire Line
+	8760 6496 8761 6496
+Text Notes 3533 1115 0    197  ~ 39
+TEENSY 4.0 AUDIO TOOLKIT
+$Comp
+L TEENSY_4.0_AUDIO_BREAKOUT-rescue:GND-freeDSP_Classic_SMD-rescue-TEENSY_4_AUDIO_BRIDGE-rescue #PWR0112
+U 1 1 5E9EF3F9
+P 10494 3606
+AR Path="/5E9EF3F9" Ref="#PWR0112"  Part="1" 
+AR Path="/5CC25A65/5E9EF3F9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0112" H 10494 3356 50  0001 C CNN
+F 1 "GND" H 10554 3416 50  0000 C CNN
+F 2 "" H 10494 3606 60  0000 C CNN
+F 3 "" H 10494 3606 60  0000 C CNN
+	1    10494 3606
+	1    0    0    -1  
+$EndComp
+Text GLabel 9993 2624 0    50   Input ~ 0
+12V
+Text GLabel 9993 2724 0    50   Input ~ 0
+12V
+Text GLabel 9993 3024 0    50   Input ~ 0
+USB_D+
+Text GLabel 9993 2924 0    50   Input ~ 0
+USB_D-
+Text GLabel 9993 2824 0    50   Input ~ 0
+5V
+Text GLabel 9993 3424 0    50   Input ~ 0
+SPDIF_IN
+Text GLabel 9993 3324 0    50   Input ~ 0
+SPDIF_OUT
+Text GLabel 9993 3524 0    50   Input ~ 0
+3.3V
+Text GLabel 9993 3124 0    50   Input ~ 0
+GND
+Text GLabel 9993 3624 0    50   Input ~ 0
+MIDI_IN_4
+Text GLabel 9993 3724 0    50   Input ~ 0
+MIDI_IN_5
+Text GLabel 9993 3824 0    50   Input ~ 0
+MIDI_OUT_4
+Text GLabel 9993 3924 0    50   Input ~ 0
+MIDI_OUT_5
+Text GLabel 9993 4024 0    50   Input ~ 0
+MIDI_THRU_4
+Text GLabel 9993 4124 0    50   Input ~ 0
+MIDI_THRU_5
+$Comp
+L Connector_Generic:Conn_02x16_Odd_Even IO_2
+U 1 1 5E9EF40E
+P 10193 3324
+F 0 "IO_2" H 10243 4241 50  0000 C CNN
+F 1 "IO_2" H 10243 4150 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x15_P2.54mm_Vertical" H 10193 3324 50  0001 C CNN
+F 3 "~" H 10193 3324 50  0001 C CNN
+	1    10193 3324
+	1    0    0    -1  
+$EndComp
+Text Notes 9888 2140 0    79   ~ 16
+IO HEADER
+$EndSCHEMATC

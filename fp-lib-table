@@ -1,0 +1,13 @@
+(fp_lib_table
+  (lib (name microsd)(type KiCad)(uri ${KIPRJMOD}/lib_sch/microsd)(options "")(descr ""))
+  (lib (name teensy)(type KiCad)(uri ${KIPRJMOD}/lib_fp/XenGi/teensy.pretty)(options "")(descr ""))
+  (lib (name PLT133-T10W)(type KiCad)(uri ${KIPRJMOD}/lib_sch/PLT133-T10W)(options "")(descr ""))
+  (lib (name DM3AT-SF-PEJM5)(type KiCad)(uri ${KIPRJMOD}/lib_sch/DM3AT-SF-PEJM5)(options "")(descr ""))
+  (lib (name 503398-1892)(type KiCad)(uri ${KIPRJMOD}/lib_sch/503398-1892)(options "")(descr ""))
+  (lib (name USB_A_Vertical)(type KiCad)(uri ${KIPRJMOD}/lib_fp/USB_A_Vertical)(options "")(descr ""))
+  (lib (name 23LC1024)(type KiCad)(uri ${KIPRJMOD}/lib_fp/23LC1024)(options "")(descr ""))
+  (lib (name project_fp)(type KiCad)(uri ${KIPRJMOD}/lib_fp/project_fp)(options "")(descr ""))
+  (lib (name DM3D-SF)(type KiCad)(uri ${KIPRJMOD}/lib_fp/DM3D-SF)(options "")(descr ""))
+  (lib (name 6N137)(type KiCad)(uri ${KIPRJMOD}/lib_sch/6N137)(options "")(descr ""))
+  (lib (name TE_USB_A_USBA_292303-4)(type KiCad)(uri ${KIPRJMOD}/lib_sch/TE_USB_A_USBA_292303-4)(options "")(descr ""))
+)
