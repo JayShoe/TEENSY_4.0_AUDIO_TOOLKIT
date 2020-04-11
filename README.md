@@ -1,11 +1,10 @@
-# TEENSY_4.0_AUDIO_TOOLKIT
-# Teensy 4.0 Audio Toolkit
+# Teensy 4.0 Audio Toolkit and Shield
 Licensed under CC BY-NC-SA 4.0
 https://creativecommons.org/licenses/by-nc-sa/4.0/
 Project by Jay Shoemaker
 
 
-The Teensy 4.0 Audio Toolkit and Teensy 4.0 Audio Toolkit Shield is part of an open source project for learning about, designing, and rapid-prototyping custom Audio PCBs using the Teensy Audio Library. This kit exposes key features of the Teensy commonly used for audio including USB Host Input, MIDI In, Midi Out, Midi Through, SPDIF, and Toslink. The board also includes an SD Memory Card reader, RAM/Memory, and a Power Supply. Plus, the schematic points out the key pins for connecting your own audio chips to the Teensy. This project is just exposing the hardware. Some functions may require additional work on the Teensy Audio Library or your custom code. Use at your own risk. 
+The Teensy 4.0 Audio Toolkit and Shield is part of an open source project for learning about, designing, and rapid-prototyping custom Audio PCBs using the Teensy Audio Library. This kit exposes key features of the Teensy commonly used for audio including USB Host Input, MIDI In, Midi Out, Midi Through, SPDIF, and Toslink. The board also includes an SD Memory Card reader, RAM/Memory, and a Power Supply. Plus, the schematic points out the key pins for connecting your own audio chips to the Teensy. This project is just exposing the hardware. Some functions may require additional work on the Teensy Audio Library or your custom code. Use at your own risk. 
  
 ![Audio Toolkit Shield](https://github.com/JayShoe/TEENSY_4.0_AUDIO_TOOLKIT/blob/master/documents/images/Teensy_4.0_Audio_Toolkit_Shield_image_1.jpg)
  
@@ -13,7 +12,7 @@ The Teensy 4.0 Audio Toolkit and Teensy 4.0 Audio Toolkit Shield is part of an o
  
  
 
-# Teensy Audio Toolkit Shield’s Key Features
+# Teensy Audio Toolkit and Shield's Key Features
  * Open Source CC BY-NC-SA 4.0
  * Stackable Design – To easily integrate with other stackable modules including DAC, ADC, Codec, Bluetooth, etc. 
  * Starting Point for Custom IO Panels – All inputs/outputs are only exposed as header pins. Use of a custom daughterboard, dongle, or soldering directly to the Audio Toolkit Mainboard to expose the desired jacks or ports. 
