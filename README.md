@@ -25,12 +25,13 @@ The Teensy 4.0 Audio Toolkit Shield is an open source project for learning about
   * Power Supply – 1 Amp regulator for both 5V and 3.3V rails (LM2940) with an input voltage range of 6 V to 26 V. 
  * Footprints, 3d Models, and Schematics included. 
  * Schematic notes and references for SAI1 and SAI2 connectivity to the Teensy. 
-# Creating a Custom IO Board
+# Daughterboards with Jacks/Ports
 The Audio Toolkit Shield’s header allows simple connections to one or more daughter boards. The mainboard and daughter board’s source and gerbers will be publicly available on the project repository. Pre-assembled boards will be made available (when tested/complete). Create your own daughterboard using the toolkit as a starting point. (Be sure to contribute back your modifications!)
+## Designing a Custom Daughterboard
 1.	Delete unneeded parts including the Audio Toolkit Mainboard. 
 2.	Place and route your components. Define your edge cuts. Order your board. 
 3.	Connect your customer IO Board to the Audio Toolkit Mainboard IO Header. 
-Audio Toolkit Notes
+## Audio Toolkit Notes
 -	Use pre-built IO boards found within the project’s repository. 
 -	Use the “Audio Toolkit IO Header” to stack your custom IO Board on top of the mainboard via the headers. 
 -	Use the individual headers to create smaller custom IO Boards and link your project via ribbon cables, etc. 
