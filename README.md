@@ -1,5 +1,5 @@
 # TEENSY_4.0_AUDIO_TOOLKIT
-# Teensy 4.0 Audio Toolkit Shield
+# Teensy 4.0 Audio Toolkit
 Licensed under CC BY-NC-SA 4.0
 https://creativecommons.org/licenses/by-nc-sa/4.0/
 Project by Jay Shoemaker
