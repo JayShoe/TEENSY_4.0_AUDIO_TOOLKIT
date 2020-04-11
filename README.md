@@ -7,9 +7,9 @@ Project by Jay Shoemaker
 
 The Teensy 4.0 Audio Toolkit Shield is an open source project for learning about, designing, and rapid-prototyping custom Audio PCBs using the Teensy Audio Library. This kit exposes key features of the Teensy commonly used for audio including USB Host Input, MIDI In, Midi Out, Midi Through, SPDIF, and Toslink. The board also includes an SD Memory Card reader, RAM/Memory, and a Power Supply. Plus, the schematic points out the key pins for connecting your own audio chips to the Teensy. This project is just exposing the hardware. Some functions may require additional work on the Teensy Audio Library or your custom code. Use at your own risk. 
  
- [Audio Toolkit Shield](https://github.com/JayShoe/TEENSY_4.0_AUDIO_TOOLKIT/blob/master/documents/images/Teensy_4.0_Audio_Toolkit_Shield_image_1.jpg)
+![Audio Toolkit Shield](https://github.com/JayShoe/TEENSY_4.0_AUDIO_TOOLKIT/blob/master/documents/images/Teensy_4.0_Audio_Toolkit_Shield_image_1.jpg)
  
- [Audio Toolkit](https://github.com/JayShoe/TEENSY_4.0_AUDIO_TOOLKIT/blob/master/documents/images/Teensy_4.0_Audio_Toolkit_Shield_image_2.jpg)
+![Audio Toolkit](https://github.com/JayShoe/TEENSY_4.0_AUDIO_TOOLKIT/blob/master/documents/images/Teensy_4.0_Audio_Toolkit_Shield_image_2.jpg)
  
  
 
