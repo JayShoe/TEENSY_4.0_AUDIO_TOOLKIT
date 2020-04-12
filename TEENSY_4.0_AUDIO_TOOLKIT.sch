@@ -1328,4 +1328,107 @@ F 3 "~" H 10193 3324 50  0001 C CNN
 $EndComp
 Text Notes 9888 2140 0    79   ~ 16
 IO HEADER
+Text Notes 11933 5482 0    79   ~ 16
+SAI 1
+$Comp
+L Connector:Conn_01x04_Female CLK_1
+U 1 1 5E93116A
+P 12253 5870
+F 0 "CLK_1" H 12281 5846 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 12281 5755 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 12253 5870 50  0001 C CNN
+F 3 "~" H 12253 5870 50  0001 C CNN
+	1    12253 5870
+	1    0    0    -1  
+$EndComp
+Text GLabel 13798 6016 0    50   Input ~ 0
+BCLK2
+Text GLabel 13798 6116 0    50   Input ~ 0
+LRCLK2
+Text GLabel 12053 5970 0    50   Input ~ 0
+BCLK1
+Text GLabel 13798 5816 0    50   Input ~ 0
+MCLK2
+Text GLabel 12053 5770 0    50   Input ~ 0
+MCLK1
+Text GLabel 12053 6070 0    50   Input ~ 0
+LRCLK1
+$Comp
+L Connector:Conn_01x04_Female CLK_2
+U 1 1 5E959A09
+P 13998 5916
+F 0 "CLK_2" H 14026 5892 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 14026 5801 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 13998 5916 50  0001 C CNN
+F 3 "~" H 13998 5916 50  0001 C CNN
+	1    13998 5916
+	1    0    0    -1  
+$EndComp
+Text GLabel 12053 5870 0    50   Input ~ 0
+GND
+Text GLabel 13798 5916 0    50   Input ~ 0
+GND
+$Comp
+L Connector:Conn_01x03_Female SAI_2
+U 1 1 5E9CE1C2
+P 13953 6514
+F 0 "SAI_2" H 13981 6540 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 13981 6449 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 13953 6514 50  0001 C CNN
+F 3 "~" H 13953 6514 50  0001 C CNN
+	1    13953 6514
+	1    0    0    -1  
+$EndComp
+Text GLabel 1665 2992 0    50   Input ~ 0
+IN1
+Text GLabel 12070 6489 0    50   Input ~ 0
+OUT1B
+Text GLabel 12070 6389 0    50   Input ~ 0
+OUT1A
+Text GLabel 12070 6689 0    50   Input ~ 0
+OUT1D
+Text GLabel 13725 6527 0    50   Input ~ 0
+OUT2
+Text GLabel 13717 6418 0    50   Input ~ 0
+IN2
+Text GLabel 12070 6289 0    50   Input ~ 0
+IN1
+Text GLabel 12070 6589 0    50   Input ~ 0
+OUT1C
+Text GLabel 13753 6614 0    50   Input ~ 0
+GND
+Text GLabel 12070 6789 0    50   Input ~ 0
+GND
+$Comp
+L Connector:Conn_01x06_Female SAI_1
+U 1 1 5EA54A02
+P 12270 6489
+F 0 "SAI_1" H 12298 6465 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 12298 6374 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 12270 6489 50  0001 C CNN
+F 3 "~" H 12270 6489 50  0001 C CNN
+	1    12270 6489
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female PWR_1
+U 1 1 5EAACE2F
+P 12212 7407
+F 0 "PWR_1" H 12240 7433 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 12240 7342 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 12212 7407 50  0001 C CNN
+F 3 "~" H 12212 7407 50  0001 C CNN
+	1    12212 7407
+	1    0    0    -1  
+$EndComp
+Text GLabel 11984 7420 0    50   Input ~ 0
+3.3V
+Text GLabel 11976 7311 0    50   Input ~ 0
+5V
+Text GLabel 12012 7507 0    50   Input ~ 0
+GND
+Text Notes 13606 5483 0    79   ~ 16
+SAI 2
+Text Notes 11911 7132 0    79   ~ 16
+SAI POWER
 $EndSCHEMATC
