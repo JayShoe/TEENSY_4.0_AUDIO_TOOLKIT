@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 29)
+    (drawings 32)
     (tracks 10)
     (zones 0)
     (modules 57)
@@ -3263,6 +3263,15 @@
     )
   )
 
+  (gr_text "1\n\n3\n\n5\n\n7\n\n9\n\n11\n\n13\n\n15\n\n17\n\n19\n\n21\n\n23\n\n25\n\n27\n\n29\n\n31\n\n33\n\n35" (at 228.25 243.44 90) (layer F.SilkS) (tstamp 5E94A770)
+    (effects (font (size 0.8 0.8) (thickness 0.125)))
+  )
+  (gr_text "12v\n12v\n5v\n3.3v\n5v_USB\nUSB_D-\nUSB_D+\nGND\n\nSPDIF_OUT\nSPDIF_IN\n3.3V\nMIDI_IN_4\nMIDI_IN_5\nMIDI_OUT_4\nMIDI_OUT_5\nMIDI_THRU_4\nMIDI_THRU_5" (at 227.98 243.78 270) (layer B.SilkS) (tstamp 5E949EF2)
+    (effects (font (size 1.5 1.4) (thickness 0.3)) (justify left mirror))
+  )
+  (gr_text "12v\n12v\n5v\n3.3v\n5v_USB\nUSB_D-\nUSB_D+\nGND\n\nSPDIF_OUT\nSPDIF_IN\n3.3V\nMIDI_IN_4\nMIDI_IN_5\nMIDI_OUT_4\nMIDI_OUT_5\nMIDI_THRU_4\nMIDI_THRU_5" (at 227.77 250.69 90) (layer F.SilkS)
+    (effects (font (size 1.5 1.4) (thickness 0.3)) (justify right))
+  )
   (gr_text "PLUS...\n - SOLDER PADS FOR SAI\n - MASTER CLOCK RESISTOR\n - I2C PULL UPS\n - SD CARD\n - RAM/MEMORY" (at 92.28 231.5) (layer F.SilkS) (tstamp 5E96A606)
     (effects (font (size 4 4) (thickness 1)))
   )
@@ -3279,7 +3288,7 @@
   (gr_text "AUDIO TOOLKIT IO HEADER" (at 339.09 221.488) (layer F.SilkS) (tstamp 5E928F41)
     (effects (font (size 4 4) (thickness 1)))
   )
-  (gr_poly (pts (xy 150.544 237.648) (xy 150.544 235.108) (xy 155.116 238.664) (xy 150.544 242.474) (xy 150.544 239.68) (xy 137.844 239.68) (xy 137.844 237.648)) (layer F.SilkS) (width 0.1))
+  (gr_poly (pts (xy 135.83 212.44) (xy 135.83 209.9) (xy 140.402 213.456) (xy 135.83 217.266) (xy 135.83 214.472) (xy 123.13 214.472) (xy 123.13 212.44)) (layer F.SilkS) (width 0.1))
   (gr_text "AUDIO TOOLKIT SHIELD" (at 215.66 216.55) (layer F.SilkS) (tstamp 5E927B5D)
     (effects (font (size 4 4) (thickness 1)))
   )
