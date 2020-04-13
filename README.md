@@ -27,7 +27,9 @@ The Teensy 4.0 Audio Toolkit and Shield is part of an open source project for le
   * MIDI In, Out, and Through – via header, DIN 5, or 3.5mm 3-pin Mini MIDI and includes an optocoupler (6N137) and a logic gate (74LS00) for proper termination. 
   * Power Supply – 1 Amp regulator for both 5V and 3.3V rails (LM2940) with an input voltage range of 6 V to 26 V. 
  * Footprints, 3d Models, and Schematics included. 
- * SAI Expansion Headers - Schematic notes and references for SAI1 and SAI2 connectivity to the Teensy. 
+ * SAI Connectivity and Labels. The teensy footprint has been modified to include wide pads and pin information for standard I2S connectivity. Solder wire to those pads for an easy and secure connection to external DAC/ADC/CODEC/ETC. 
+  * Master Clock - 100 Ohm resistors installed on MCLK1 and MCLK2 lines for easy connectivity. 
+  * i2C - Pull up resistor pads on board for easy connectivity.
 # Daughterboards with Jacks/Ports
 The Audio Toolkit Shield’s header allows simple connections to one or more daughter boards. The mainboard and daughter board’s source and gerbers will be publicly available on the project repository. Pre-assembled boards will be made available (when tested/complete). Create your own daughterboard using the toolkit as a starting point. (Be sure to contribute back your modifications!)
 ## Designing a Custom Daughterboard
