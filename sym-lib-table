@@ -1,11 +1,11 @@
 (sym_lib_table
   (lib (name teensy)(type Legacy)(uri ${KIPRJMOD}/lib_sch/teensy_library-master/teensy_library-master/teensy.lib)(options "")(descr ""))
   (lib (name 2020-04-10_11-56-10)(type Legacy)(uri ${KIPRJMOD}/lib_sch/ul_23LC1024IP/KiCAD/2020-04-10_11-56-10/2020-04-10_11-56-10.lib)(options "")(descr ""))
-  (lib (name TEENSY_4.0_AUDIO_BREAKOUT-rescue)(type Legacy)(uri "E:/OneDrive/Documents/Work 3.0/Jukebox Jockey/Hardware Development/!!!!!!!! GITHUB MANAGED/TEENSY_4.0_AUDIO_BREAKOUT/TEENSY_4.0_AUDIO_BREAKOUT/TEENSY_4.0_AUDIO_BREAKOUT-rescue.lib")(options "")(descr ""))
   (lib (name PLT133-T10W)(type Legacy)(uri ${KIPRJMOD}/lib_sch/PLT133-T10W/PLT133-T10W.lib)(options "")(descr ""))
   (lib (name EAPLRAA4)(type Legacy)(uri ${KIPRJMOD}/lib_sch/EAPLRAA4/EAPLRAA4.lib)(options "")(descr ""))
   (lib (name DM3AT-SF-PEJM5)(type Legacy)(uri ${KIPRJMOD}/lib_sch/DM3AT-SF-PEJM5/DM3AT-SF-PEJM5.lib)(options "")(descr ""))
   (lib (name 6N137)(type Legacy)(uri ${KIPRJMOD}/lib_sch/6N137/6N137.lib)(options "")(descr ""))
   (lib (name SPDIF_PJRAN1X1U04X)(type Legacy)(uri ${KIPRJMOD}/lib_sch/SPDIF_PJRAN1X1U04X/SPDIF_PJRAN1X1U04X.lib)(options "")(descr ""))
   (lib (name 35RAPC4BHN2)(type Legacy)(uri ${KIPRJMOD}/lib_sch/3.5MM_STEREO_35RAPC4BHN2/35RAPC4BHN2.lib)(options "")(descr ""))
+  (lib (name lib_sch)(type Legacy)(uri ${KIPRJMOD}/lib_sch/lib_sch.lib)(options "")(descr ""))
 )

@@ -1,0 +1,35 @@
+notes from: https://hackaday.com/2017/05/18/kicad-best-practises-library-management/
+
+
+doodad
+ ?3d_models     // .STEP and .WRL model files for all footprints
+ ?datasheets    // data sheets for components used
+ ?gerber        // final production files
+ ?images        // SVG images and 3D board renders
+ ?lib_sch       // schematic symbols
+ ?lib_fp.pretty // footprints
+ ?pdf           // schematics, board layouts, dimension drawings
+
+
+
+========================================
+LOCALIZING SYMBOLS
+========================================
+1. COPY THE SYMBOLS LIBRARY CACHE TO lib_sch. 
+SYMBOLS CACHE IS LOCATED AT:
+doodad-cache.lib
+
+2. RENAME THE SYMBOL'S CACHE TO doodad.lib. 
+
+3. ADD THE SYMBOL LIBRARY TO THE COMPONENT LIBRARIES. POINT TO YOUR LOCAL PROJECT FOLDER. 
+
+
+
+
+=========================================
+LOCALIZING FOOTPRINTS
+=========================================
+
+1 assign all footprints in eschematic. 
+2. Import all footprnits into PCBNEW
+3. Choose File>Archive Footprints>
