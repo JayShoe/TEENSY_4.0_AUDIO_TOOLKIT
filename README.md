@@ -6,7 +6,7 @@ Project by Jay Shoemaker
 *Project is incomplete, accepting feedback now!
 
 
-The Teensy 4.0 Audio Toolkit and Shield is part of an open source project for learning about, designing, and rapid-prototyping custom Audio PCBs using the Teensy Audio Library. This kit exposes key features of the Teensy commonly used for audio including USB Host Input, MIDI In, Midi Out, Midi Through, SPDIF, and Toslink. The board also includes an SD Memory Card reader, RAM/Memory, and a Power Supply. Plus, the schematic points out the key pins for connecting your own audio chips to the Teensy. This project is just exposing the hardware. Some functions may require additional work on the Teensy Audio Library or your custom code. Use at your own risk. 
+The Teensy 4.0 Audio Toolkit and Shield is part of an open source project for learning about, designing, and rapid-prototyping custom Audio PCBs using the Teensy Audio Library. This kit exposes key features of the Teensy commonly used for audio including USB Host Input, MIDI In, Midi Out, Midi Through, SPDIF, and Toslink. The board also includes an SD Memory Card reader, RAM/Memory, and a Power Supply. Plus, the schematic points out the key pins for connecting your own audio chips to the Teensy. This project is just exposing the hardware. Some functions may require additional work on the Teensy Audio Library or your custom code.  
  
 ![Audio Toolkit Shield](https://github.com/JayShoe/TEENSY_4.0_AUDIO_TOOLKIT/blob/master/documents/images/Teensy_4.0_Audio_Toolkit_Shield_image_1.jpg)
 
@@ -27,7 +27,9 @@ The Teensy 4.0 Audio Toolkit and Shield is part of an open source project for le
   * MIDI In, Out, and Through – via header, DIN 5, or 3.5mm 3-pin Mini MIDI and includes an optocoupler (6N137) and a logic gate (74LS00) for proper termination. 
   * Power Supply – 1 Amp regulator for both 5V and 3.3V rails (LM2940) with an input voltage range of 6 V to 26 V. 
  * Footprints, 3d Models, and Schematics included. 
- * SAI Expansion Headers - Schematic notes and references for SAI1 and SAI2 connectivity to the Teensy. 
+ * SAI Connectivity and Labels. The teensy footprint has been modified to include wide pads and pin information for standard I2S connectivity. Solder wire to those pads for an easy and secure connection to external DAC/ADC/CODEC/ETC. 
+  * Master Clock - 100 Ohm resistors installed on MCLK1 and MCLK2 lines for easy connectivity. 
+  * i2C - Pull up resistors on board for easy connectivity.
 # Daughterboards with Jacks/Ports
 The Audio Toolkit Shield’s header allows simple connections to one or more daughter boards. The mainboard and daughter board’s source and gerbers will be publicly available on the project repository. Pre-assembled boards will be made available (when tested/complete). Create your own daughterboard using the toolkit as a starting point. (Be sure to contribute back your modifications!)
 ## Designing a Custom Daughterboard
