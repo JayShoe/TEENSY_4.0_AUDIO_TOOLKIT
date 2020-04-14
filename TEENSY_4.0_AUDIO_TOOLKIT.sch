@@ -124,7 +124,7 @@ Text GLabel 1650 4100 0    50   Input ~ 0
 SPDIF_OUT_TEENSY
 Text GLabel 1650 4200 0    50   Input ~ 0
 SPDIF_IN_TEENSY
-Text GLabel 3850 3700 2    50   Input ~ 0
+Text GLabel 3850 3100 2    50   Input ~ 0
 MCLK2
 Text GLabel 3850 3000 2    50   Input ~ 0
 SD_DAT1
