@@ -1143,4 +1143,18 @@ Text GLabel 7300 7050 0    50   Input ~ 0
 GND
 Wire Wire Line
 	8000 7050 8200 7050
+Text GLabel 4550 3400 2    50   Input ~ 0
+OUT1B
+$Comp
+L Device:R_Small R14
+U 1 1 5E97C255
+P 4450 3400
+F 0 "R14" V 4395 3295 20  0000 L CNN
+F 1 "220R" V 4464 3335 20  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4450 3400 50  0001 C CNN
+F 3 "~" H 4450 3400 50  0001 C CNN
+F 4 "SM0603_Resistor" V 4500 3405 20  0001 C CNN "Package / Case"
+	1    4450 3400
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
