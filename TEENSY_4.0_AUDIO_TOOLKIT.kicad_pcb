@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 33)
+    (drawings 35)
     (tracks 10)
     (zones 0)
     (modules 58)
@@ -18,7 +18,7 @@
     (34 B.Paste user hide)
     (35 F.Paste user hide)
     (36 B.SilkS user hide)
-    (37 F.SilkS user hide)
+    (37 F.SilkS user)
     (38 B.Mask user hide)
     (39 F.Mask user hide)
     (40 Dwgs.User user hide)
@@ -3334,6 +3334,10 @@
     )
   )
 
+  (gr_text <GND (at 203.8604 247.7389 90) (layer F.SilkS)
+    (effects (font (size 0.8 0.8) (thickness 0.18)))
+  )
+  (gr_poly (pts (xy 204.9145 249.2629) (xy 250.7869 249.2629) (xy 250.7615 249.9487) (xy 204.9145 249.9741) (xy 204.9018 249.2375) (xy 204.9018 249.2248)) (layer F.SilkS) (width 0.1))
   (gr_text "1\n\n3\n\n5\n\n7\n\n9\n\n11\n\n13\n\n15\n\n17\n\n19\n\n21\n\n23\n\n25\n\n27\n\n29\n\n31\n\n33\n\n35" (at 227.92 242.82 270) (layer B.SilkS) (tstamp 5E94ABE1)
     (effects (font (size 0.76 0.8) (thickness 0.125)) (justify mirror))
   )
