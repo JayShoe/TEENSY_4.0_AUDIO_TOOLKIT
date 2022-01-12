@@ -1143,18 +1143,98 @@ Text GLabel 7300 7050 0    50   Input ~ 0
 GND
 Wire Wire Line
 	8000 7050 8200 7050
-Text GLabel 4550 3400 2    50   Input ~ 0
-OUT1B
 $Comp
-L Device:R_Small R14
-U 1 1 5E97C255
-P 4450 3400
-F 0 "R14" V 4395 3295 20  0000 L CNN
-F 1 "220R" V 4464 3335 20  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4450 3400 50  0001 C CNN
-F 3 "~" H 4450 3400 50  0001 C CNN
-F 4 "SM0603_Resistor" V 4500 3405 20  0001 C CNN "Package / Case"
-	1    4450 3400
-	0    1    1    0   
+L Connector_Generic:Conn_02x05_Odd_Even J?
+U 1 1 5E9B251E
+P 13950 3900
+F 0 "J?" H 14000 4317 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 14000 4226 50  0000 C CNN
+F 2 "" H 13950 3900 50  0001 C CNN
+F 3 "~" H 13950 3900 50  0001 C CNN
+	1    13950 3900
+	1    0    0    -1  
 $EndComp
+Text GLabel 14250 3700 2    50   Input ~ 0
+VIN
+Text GLabel 14250 3900 2    50   Input ~ 0
+RST
+Text GLabel 14250 3800 2    50   Input ~ 0
+GND
+Text GLabel 14250 4000 2    50   Input ~ 0
+INT
+Text GLabel 13750 4100 0    50   Input ~ 0
+SPI_SCK
+Text GLabel 13750 3900 0    50   Input ~ 0
+SPI_MOSI
+Text GLabel 13750 4000 0    50   Input ~ 0
+SPI_CS
+Text GLabel 13750 3800 0    50   Input ~ 0
+SPI_MISO
+Text Notes 13905 3074 0    79   ~ 16
+SPI
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP_MOSI1
+U 1 1 5E9F4B01
+P 9800 3550
+F 0 "JP_MOSI1" H 9800 3663 50  0000 C CNN
+F 1 "SolderJumper_3_Bridged12" H 9800 3664 50  0001 C CNN
+F 2 "" H 9800 3550 50  0001 C CNN
+F 3 "~" H 9800 3550 50  0001 C CNN
+	1    9800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP_SCK1
+U 1 1 5E9F5F41
+P 9850 4050
+F 0 "JP_SCK1" H 9850 4163 50  0000 C CNN
+F 1 "SolderJumper_3_Bridged12" H 9850 4164 50  0001 C CNN
+F 2 "" H 9850 4050 50  0001 C CNN
+F 3 "~" H 9850 4050 50  0001 C CNN
+	1    9850 4050
+	1    0    0    -1  
+$EndComp
+Text GLabel 9650 4050 0    50   Input ~ 0
+SCK3
+Text GLabel 10050 4050 2    50   Input ~ 0
+SCK4
+Text GLabel 10000 3550 2    50   Input ~ 0
+MOSI3
+Text GLabel 9600 3550 0    50   Input ~ 0
+MOSI4
+Text GLabel 9850 4200 2    50   Input ~ 0
+SPI_SCK
+Text GLabel 9800 3700 2    50   Input ~ 0
+SPI_SCK
+Text GLabel 1650 3300 0    50   Input ~ 0
+SPI_MOSI
+Text GLabel 1650 3400 0    50   Input ~ 0
+SPI_MISO
+Text GLabel 1650 3200 0    50   Input ~ 0
+SPI_CS
+Text GLabel 1650 4000 0    50   Input ~ 0
+SPI_SCK
+Text Notes 12605 674  0    79   ~ 16
+EXPRESSION PEDALS
+Text Notes 13705 4524 0    79   ~ 16
+FAN HEADER
+$Comp
+L Connector_Generic_MountingPin:Conn_01x03_MountingPin J?
+U 1 1 5EA94C28
+P 14150 4950
+F 0 "J?" H 14238 4914 50  0000 L CNN
+F 1 "Conn_01x03_MountingPin" H 14100 3950 50  0000 L CNN
+F 2 "" H 14150 4950 50  0001 C CNN
+F 3 "~" H 14150 4950 50  0001 C CNN
+	1    14150 4950
+	1    0    0    -1  
+$EndComp
+Text GLabel 13950 4850 0    50   Input ~ 0
+GND
+Text GLabel 13950 4950 0    50   Input ~ 0
+5V
+Text GLabel 13950 5050 0    50   Input ~ 0
+?
+Text Notes 8550 4950 0    39   ~ 0
+https://allpinouts.org/pinouts/connectors/motherboards/motherboard-cpu-3-pin-fan-connector/
 $EndSCHEMATC
